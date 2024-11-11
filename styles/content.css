@@ -1,0 +1,41 @@
+.MainBlock {
+    flex-direction: row;
+    padding: 25px;
+    z-index: 1;
+    font-family: 'Montserrat';
+    text-align: justify;
+}
+
+.rowBlock {
+    display: flex;
+}
+
+.rowBlock div {
+    margin: 20px;
+}
+
+.image {
+    position: relative;
+    width: var(--image-width, 400px);
+    height: var(--image-height, 400px);
+}
+
+.pt {
+    text-align: justify;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 5000;
+    text-shadow: -1.5px -1.5px 0 #000,
+    1.5px -1.5px 0 #000,
+    -1.5px  1.5px 0 #000,
+    1.5px  1.5px 0 #000;
+}
+
+.imageButton img {
+    position: relative;
+    top: -5px;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,81 @@
+#main-content {
+    background-color: #131314;
+    padding: 0;
+    margin: 0;
+}
+
+#canvas-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#paintCanvas {
+    width: 2000px;
+    height: 1200px;
+    background-color: white;
+    cursor: crosshair;
+}
+
+#main-content #toolbar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: #2C2C2C;
+    border-radius: 50px;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#main-content #toolbar label {
+    color: #E3E3E3;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+#main-content #toolbar input[type="range"] {
+    width: 100px;
+    margin: 0 10px;
+}
+
+#main-content #toolbar input[type="color"] {
+    border: none;
+    background: none;
+    margin: 0 10px;
+}
+
+#main-content #toolbar .custom-btn {
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: #1E1F20;
+    color: #E3E3E3;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    margin: 0 10px;
+}
+
+#main-content #toolbar .custom-btn.inactive {
+    border-color: #ff2104;
+}
+
+#main-content #toolbar .custom-btn.active {
+    border-color: #22ff00;
+}
+
+#main-content #toolbar .custom-btn:hover {
+    background-color: #1E1F20;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}

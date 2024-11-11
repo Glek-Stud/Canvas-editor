@@ -1,0 +1,57 @@
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.menu li {
+    right: 43px;
+    background-color: #282A2C;
+    border-radius: 50px;
+    margin: 5px;
+    padding: 20px 30px;
+    text-align: left;
+    font-weight: bold;
+    width: 22vw;
+    height: 8vh;
+    list-style: none;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    width: 800px;
+    height: 800px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(var(--clr), transparent, transparent);
+    aspect-ratio: 1 / 1;
+    opacity: 0;
+    transition: 0.5s, top 0s, left 0s;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: 50px;
+    background-color: rgba(40, 42, 44, 0.7);
+}

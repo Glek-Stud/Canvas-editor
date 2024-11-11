@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131314;
+    color: #E3E3E3;
+}
+
+.header {
+    height: 15vh;
+    background-color: #282A2C;
+    color: #fff;
+    text-align: left;
+    padding: 30px 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-btn {
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: #1E1F20;
+    color: #E3E3E3;
+    padding: 10px 20px;
+    margin-left: -1px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid #E3E3E3;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #1E1F20;
+    border-color: #ff2104;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.custom-btn.hidden:hover {
+    background-color: #1E1F20;
+    border-color: #08ff63;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.sidebar {
+    height: calc(100vh - 15vh);
+    background-color: #1E1F20;
+    border-radius: 40px;
+    padding: 25px;
+    border: 10px solid #131314;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 25%;
+    margin-left: 20px;
+    box-sizing: border-box;
+    transition: width 0.3s ease, padding 0.3s ease, border 0.3s ease;
+}
+
+.MainBlock {
+    height: calc(100vh - 15vh);
+    padding: 25px;
+    overflow: auto;
+    width: 75%;
+    transition: width 0.3s ease;
+}
+
+.sidebar.hidden {
+    width: 0;
+    padding: 0;
+    border: none;
+    margin-left: 0;
+    overflow: hidden;
+    transition: width 0.3s ease, padding 0.3s ease, border 0.3s ease;
+}
+
+#main-content.expanded {
+    width: 100%;
+    transition: width 0.3s ease;
+}
